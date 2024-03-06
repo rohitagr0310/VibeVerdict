@@ -1,0 +1,45 @@
+/* Header Styles */
+.header {
+  flex: 10;
+  flex: content;
+  box-sizing: content-box;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.h-left {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.h-left:hover {
+  color: #b455f0;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem; /* Adjust as needed */
+  font-weight: bold;
+}
+.h-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.h-right > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.navbar a {
+  color: #000; /* Adjust link color */
+  text-decoration: none;
+}

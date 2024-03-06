@@ -1,0 +1,37 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeVerdict</title>
+    <link rel="stylesheet" href="./../static/css/index.css" />
+  </head>
+  <body class="body">
+    {% extends "header.html" %} {% block content %}
+    <div class="chat-container">
+      <div class="chat-box">
+        <div class="chat-log" id="chat-log">
+          <!-- Chat messages will be displayed here -->
+          {% for message in messages %}
+          <div class="message">{{ message }}</div>
+          {% endfor %}
+        </div>
+        <form
+          action="{{ url_for('send_message') }}"
+          method="post"
+          id="message-form"
+        >
+          <input
+            type="text"
+            name="message"
+            id="message-input"
+            placeholder="Type your message..."
+          />
+          <button class="i-button" type="submit" id="send-button">Send</button>
+        </form>
+      </div>
+    </div>
+    {% include "footer.html" %} {% endblock %}
+  </body>
+</html>

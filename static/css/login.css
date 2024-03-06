@@ -1,0 +1,57 @@
+.g-body {
+  background-image: linear-gradient(
+    to left bottom,
+    #6bdcf2,
+    #95e1fd,
+    #b8e5ff,
+    #d6ebff,
+    #ecf2ff,
+    #e6ebff,
+    #e3e2ff,
+    #e4d9ff,
+    #d4bbff,
+    #c79cfd,
+    #bc7bf8,
+    #b455f0
+  );
+}
+.g-container {
+  box-sizing: border-box;
+  margin: 100px auto; /* Adjust margin to center the container */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 400px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+}
+
+.g-info {
+  margin-top: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.g-username-input,
+.g-password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.g-button {
+  background-color: rgb(14, 116, 233);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.g-button:hover {
+  background-color: rgba(14, 116, 233, 0.8);
+  border-color: aqua;
+  transform: scale(1.05);
+}

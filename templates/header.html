@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}VibeVerdict{% endblock %}</title>
+    <link rel="stylesheet" href="./../static/css/header.css" />
+    <!-- Include CSS files here -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="h-left">
+          <h1><a href="{{ url_for('index') }}">VibeVerdict</a></h1>
+        </div>
+        <div class="h-right">
+          <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer">
+      <p>&copy; 2024 Chat Box. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

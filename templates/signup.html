@@ -1,0 +1,39 @@
+<!-- templates/signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}VibeVerdic-Singup{% endblock %}</title>
+    <link rel="stylesheet" href="./../static/css/signup.css" />
+  </head>
+  <body class="s-body">
+    {% extends "header.html" %}{% block content %}
+    <div class="s-container">
+      <form action="{{ url_for('signup') }}" method="post">
+        <div class="s-info">
+          <label class="s-username" for="username">Username:</label>
+          <input
+            class="s-username-input"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <br />
+          <label class="s-password" for="password">Password:</label>
+          <input
+            class="s-password-input"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <br /><br />
+          <button class="s-button" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    {% include "footer.html" %} {% endblock %}
+  </body>
+</html>
