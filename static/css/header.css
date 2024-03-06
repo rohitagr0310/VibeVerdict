@@ -1,15 +1,13 @@
 /* Header Styles */
 .header {
-  flex: 10;
-  flex: content;
+  height: 10vh;
+  display: flex;
   box-sizing: content-box;
   border: 1px solid #ccc;
   border-radius: 20px;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  justify-content: space-between;
 }
 
 .h-left {
@@ -17,16 +15,6 @@
   font-weight: bold;
 }
 
-.h-left:hover {
-  color: #b455f0;
-}
-
-.navbar {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.2rem; /* Adjust as needed */
-  font-weight: bold;
-}
 .h-right {
   display: flex;
   flex: 1;
@@ -39,7 +27,11 @@
   margin-right: 4rem;
 }
 
-.navbar a {
-  color: #000; /* Adjust link color */
+.header a {
+  color: black; /* Adjust link color */
   text-decoration: none;
+}
+
+.header a:hover {
+  color: #b455f0;
 }

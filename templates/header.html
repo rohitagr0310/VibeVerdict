@@ -9,18 +9,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar">
-        <div class="h-left">
-          <h1><a href="{{ url_for('index') }}">VibeVerdict</a></h1>
-        </div>
-        <div class="h-right">
-          <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('login') }}">Login</a></li>
-            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="h-left">
+        <h1><a href="{{ url_for('index') }}">VibeVerdict</a></h1>
+      </div>
+      <div class="h-right">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+      </div>
     </header>
 
     {% block content %}{% endblock %}
